@@ -6,4 +6,4 @@
 
 > esay to update
 
-- [batterylevel](./batterylevel/README.md): 电池示例
+- [batterylevel](./packages/batterylevel/README.md): 电池示例
