@@ -1,7 +1,0 @@
-// This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=E:\hx\java\flutter1.7.8
-FLUTTER_APPLICATION_PATH=E:\hx\test_space\flutter_plugin\batterylevel\batterylevel\example
-FLUTTER_TARGET=lib/main.dart
-FLUTTER_BUILD_DIR=build
-SYMROOT=${SOURCE_ROOT}/../build\ios
-FLUTTER_FRAMEWORK_DIR=E:\hx\java\flutter1.7.8\bin\cache\artifacts\engine\ios
