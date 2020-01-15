@@ -13,9 +13,12 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /** BatterylevelPlugin */
 public class BatterylevelPlugin implements FlutterPlugin, MethodCallHandler {
+  private static final String BATTERY_CHANNEL = "com.lanhuapp.flutter/battery";
+
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-    final MethodChannel channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "batterylevel");
+    final MethodChannel channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), BATTERY_CHANNEL);
+    // final MethodChannel channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "batterylevel");
     channel.setMethodCallHandler(new BatterylevelPlugin());
   }
 
@@ -29,7 +32,8 @@ public class BatterylevelPlugin implements FlutterPlugin, MethodCallHandler {
   // depending on the user's project. onAttachedToEngine or registerWith must both be defined
   // in the same class.
   public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "batterylevel");
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), BATTERY_CHANNEL);
+    // final MethodChannel channel = new MethodChannel(registrar.messenger(), "batterylevel");
     channel.setMethodCallHandler(new BatterylevelPlugin());
   }
 
