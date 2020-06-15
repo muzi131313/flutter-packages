@@ -39,7 +39,7 @@ public class BatterylevelPlugin implements FlutterPlugin, MethodCallHandler {
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-    String callMethod = call.method
+    String callMethod = call.method;
     if (callMethod.equals("getPlatformVersion")) {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
     } else if (callMethod.equals("getBatteryLevel")) {
